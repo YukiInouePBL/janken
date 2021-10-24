@@ -32,6 +32,8 @@ from keras.models import load_model
 
 import time
 
+import random
+
 
 
 import RPi.GPIO as GPIO
@@ -149,7 +151,7 @@ if __name__ == '__main__':
 
                 #相手の出したものの確認
 
-                com = random.randient(0,2)
+                com = random.randint(0,2)
 
                 if com == 0:
                     print("相手の出した手はグーです")
@@ -169,15 +171,9 @@ if __name__ == '__main__':
                 else:
                     print("あなたの負けです")
 
-
-
                 test_image = []
 
-            
-
             time.sleep(0.01)
-
-            break
 
 
     except KeyboardInterrupt:
