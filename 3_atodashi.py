@@ -50,7 +50,7 @@ label = 'label.txt'
 
 
 
-f = open(FLAGS.label,'r')
+f = open(label,'r')
 
 for line in f:
 
