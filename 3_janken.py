@@ -138,13 +138,38 @@ if __name__ == '__main__':
 
                 my_pose = predictions[0]
 
-                if my_pose = 0:
+                #自分の出したものの確認
+
+                if my_pose == 0:
                     print("私の出した手はグーです")
-                elif my_pose =1:
+                elif my_pose ==1:
                     print("私の出した手はチョキです")
                 else:
                     print("私の出した手はパーです")
-                
+
+                #相手の出したものの確認
+
+                com = random.randient(0,2)
+
+                if com == 0:
+                    print("相手の出した手はグーです")
+                elif com ==1:
+                    print("相手の出した手はチョキです")
+                else:
+                    print("相手の出した手はパーです")
+
+                #勝敗の判定
+
+                judge = (my_pose - com + 3) % 3
+
+                if judge == 2:
+                    print("あなたの勝ちです")
+                elif judge == 0:
+                    print("あいこです")
+                else:
+                    print("あなたの負けです")
+
+
 
                 test_image = []
 
