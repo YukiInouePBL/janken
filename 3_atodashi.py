@@ -136,10 +136,14 @@ if __name__ == '__main__':
 
                 predictions = model.predict_classes(test_image)
 
-    
+                my_pose = predictions[0]
 
-                print(label_name[predictions[0]], u'です。')
-
+                if my_pose = 0:
+                    print("私の出した手はグーです")
+                elif my_pose =1:
+                    print("私の出した手はチョキです")
+                else:
+                    print("私の出した手はパーです")
                 
 
                 test_image = []
@@ -148,6 +152,7 @@ if __name__ == '__main__':
 
             time.sleep(0.01)
 
+            break
 
 
     except KeyboardInterrupt:
